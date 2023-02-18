@@ -1,4 +1,4 @@
 # Intermediate files
-*.obj
+*.o
 *.exe
 *.out

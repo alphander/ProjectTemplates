@@ -8,8 +8,8 @@ CC:=clang
 RM:=del
 OUT:=a.exe
 
-INCLUDE_PATHS:=-I./include
-LIB_PATHS:=-L./lib
+INCLUDES:=-I./$(INCLUDE) -I./$(SRC)
+LIBS:=-L./$(LIB)
 
 DEFINES:=
 
@@ -18,7 +18,7 @@ LDFLAGS:=
 CFLAGS_ND:=-Wall -O2 -std=c17 -DNDEBUG
 CFLAGS_D:=-Wall -g -O0 -std=c17 -DDEBUG
 
-# []
+# [Debug and Release rules]
 
 .PHONY: debug release clean build all
 
